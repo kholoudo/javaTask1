@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise5</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    
+    <form>
+        <label for="password">Password(at least 6 characters)</label>
+        <input type="text" id="pass" name="pass" required />
+        <br>
+        <label for="confirmation">Repeat password</label>
+        <input
+        type="password"
+        id="pass1"
+        name="pass1"
+    
+        />
+        <br>
+        <input type="submit" id="button1"value="Submit" />
+        </form>
+
+
+        <script>
+
+       function passConditions(){
+
+        
+if(document.getElementById("pass")!=document.getElementById("pass1")){
+    alert("The two passwords don't match");
+}
+
+       }
+
+
+
+
+
+        </script>
+
+</body>
+</html>

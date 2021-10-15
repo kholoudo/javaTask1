@@ -1,0 +1,83 @@
+/*for ex1*/
+h1 {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    width: 15%;
+    background-color: yellow;
+}
+
+/*for ex2 */
+#square{
+width: 200px;
+height:200px;
+
+}
+/*for exercise 6*/
+
+.header{
+    border:black 1px solid;
+
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    background-color: darkgray;
+    width: 50%;
+}
+.header a{
+    padding-top: 1.5em;
+    padding-left: 2em;
+    text-decoration: none;
+}
+
+#paragraph{
+    width:50%;
+    margin: 0%;
+    padding: 0%;
+        
+}
+#paragraph h2{
+    background-color: darkgrey;
+    border:black 1px solid;
+
+}
+#paragraph p{
+    border:black 1px solid;
+    margin-top: 0%;
+    padding-top: 0%;
+   /* display: none;*/
+
+}
+#paragraph a{
+    text-decoration: none;
+}
+.end{
+    border:black 1px solid;
+
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    background-color: darkgray;
+    width: 50%;
+}
+.end a{
+    margin-top: 1.5em;
+    padding:0.2em;
+    text-decoration: none;
+
+}
+/*for exercise4*/
+p {
+    border: 2px black solid;
+    width: 40%;
+}
+
+/*for exercise5*/
+#button1{
+    display:none;
+}
+/*for exercise3*/
+#img1{
+    width:50%;
+    height:50%;
+}

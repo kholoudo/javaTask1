@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise4</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    
+    <select id="font" name="font">
+
+        
+        <option value="Open Sans">select font family</option>
+        <option value="Arial">Arial</option>
+        <option value="Cursive">Cursive</option>
+
+    </select>
+
+    <select id="size" name="size">
+        
+        <option value="12px">12</option>
+        <option value="16px">16</option>
+        <option value="20px">20</option> 
+
+    </select>
+
+    <input type="checkbox" id="box1" name="box1" value="Italic">
+  <label for="box1"> Italic</label>
+  <input type="checkbox" id="box2" name="box2" value="Bold">
+  <label for="box2"> Bold</label>
+  <input type="checkbox" id="box3" name="box3" value="Underline">
+  <label for="box3"> Underline</label>
+<br>
+<br>
+<br>
+
+<p id="text">The quick brown fox jumps over the lazy dog</p>
+
+<script>
+
+let textFamily=document.getElementById("font");
+let textSize=document.getElementById("size");
+let p1=document.getElementById("text");
+bold=document.getElementById("box2");
+underline=document.getElementById("box3");
+italic=document.getElementById("box1");
+
+//events
+textFamily.addEventListener('change',function tf(){
+    p1.style.fontFamily=textFamily.value;
+});
+ textSize.addEventListener('change',function ts()
+ {p1.style.fontSize=textSize.value;}
+ 
+ );
+ italic.addEventListener('change',function itf(){
+     p1.style.fontStyle="Italic";
+    if(italic.checked){
+        p1.style.fontStyle="Italic";
+
+    }else {
+        p1.style.fontStyle="normal";
+    }
+ }
+ )
+
+bold.addEventListener('change',function bf(){
+    p1.style.fontStyle="bold";
+})
+
+underline.addEventListener('change',function uf(){
+    p1.style.fontStyle="underline";
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

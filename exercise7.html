@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise7</title>
+</head>
+<body>
+    <style>
+        .layout{
+            background-color: rgb(235, 226, 226);
+            width:30%;
+            border: 1px black solid;
+          
+        }
+        #btn2{
+            display: none;
+        }
+    </style>
+
+<input type="text" id="input1">
+<button id="btn" >Add a song</button>
+
+
+<div class="container">
+
+
+</div>
+
+<script>
+const btn=document.querySelector("#btn")
+const container=document.querySelector(".container")
+const input1=document.querySelector("#input1")
+btn.addEventListener("click",addFunction)
+function addFunction(){
+const div1=document.createElement("div")
+div1.innerHTML=input1.value
+div1.setAttribute("class","layout")
+container.append(div1)
+btn2=document.createElement("button")
+div1.append(btn2)
+btn2.innerHTML="Remove"
+
+btn2.addEventListener("click",deleteFunc)
+function deleteFunc(){
+    div1.remove()
+}}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

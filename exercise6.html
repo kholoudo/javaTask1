@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise6</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <div class="header">
+ <h2>What is lorem ipsum?
+
+ </h2>
+ <a href onclick=showFunction()>Show</a>
+</div>
+
+
+<h2>Why do we use it?</h2>
+<div id="paragraph">
+<p>Lorem ipsum dolor sit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus adipisci quidem, repellat sit et beatae alias ipsa similique a aperiam. <a href onclick=hideFunction()>Hide</a></p>
+
+</div>
+<div class="end">
+<h2>Where does it come from?</h2>
+<a href="#">Show</a>
+</div>
+
+
+<script>
+function showFunction(){
+if(document.getElementById("paragraph").style.display=="none")
+document.getElementById("paragraph").style.display=="block";
+else
+document.getElementById("paragraph").style.display=="none";}
+
+
+function hideFunction(){
+    if(document.getElementById("paragraph").style.display=="block")
+document.getElementById("paragraph").style.display=="none";
+else
+document.getElementById("paragraph").style.display=="block";}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
