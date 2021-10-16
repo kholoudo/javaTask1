@@ -8,50 +8,88 @@
     <link rel="stylesheet" href="styling.css">
 </head>
 <body>
-    <div class="header">
- <h2>What is lorem ipsum?
+   
+<article>
+<h2>What is lorem ipsum?</h2>
+<div id="mydiv">
+    <div id="p1_show" class="show_link" ><a href="#" onclick="showFun('p1_text')">show</a></div>
+    <div id="p1_text" class="text">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ea autem quia in voluptates recusandae similique enim error, eveniet molestiae.
+        </p>
+        <p><a href="#" onclick="hideFun('p1_text')">hide</a></p>
+        </div>
+        </article>
 
- </h2>
- <a href onclick=showFunction()>Show</a>
-</div>
+        <article>
+            <h2>What is lorem ipsum?</h2>
+            <div id="mydiv2">
+                <div id="p2_show" class="show_link" ><a href="#" onclick="showFun2('p2_text')">show</a></div>
+                <div id="p2_text" class="text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ea autem quia in voluptates recusandae similique enim error, eveniet molestiae.
+                    </p>
+                    <p><a href="#" onclick="hideFun2('p2_text')">hide</a></p>
+                    </div>
+                    </article>
 
 
-<h2>Why do we use it?</h2>
-<div id="paragraph">
-<p>Lorem ipsum dolor sit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus adipisci quidem, repellat sit et beatae alias ipsa similique a aperiam. <a href onclick=hideFunction()>Hide</a></p>
-
-</div>
-<div class="end">
-<h2>Where does it come from?</h2>
-<a href="#">Show</a>
-</div>
-
+                    <article>
+                        <h2>What is lorem ipsum?</h2>
+                        <div id="mydiv3">
+                            <div id="p3_show" class="show_link" ><a href="#" onclick="showFun3('p3_text')">show</a></div>
+                            <div id="p3_text" class="text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ea autem quia in voluptates recusandae similique enim error, eveniet molestiae.
+                                </p>
+                                <p><a href="#" onclick="hideFun3('p3_text')">hide</a></p>
+                                </div>
+                                </article>
 
 <script>
-function showFunction(){
-if(document.getElementById("paragraph").style.display=="none")
-document.getElementById("paragraph").style.display=="block";
-else
-document.getElementById("paragraph").style.display=="none";}
+function showFun(element){
+document.getElementById(element).style.display="block";}
 
 
-function hideFunction(){
-    if(document.getElementById("paragraph").style.display=="block")
-document.getElementById("paragraph").style.display=="none";
-else
-document.getElementById("paragraph").style.display=="block";}
+function 
+hideFun(element){
+document.getElementById(element).style.display="none";
+}
 
+function showFun2(element){
+document.getElementById(element).style.display="block";}
 
+function 
+hideFun2(element){
+document.getElementById(element).style.display="none";
+}
 
+function showFun3(element){
+document.getElementById(element).style.display="block";}
 
-
-
-
-
-
-
+function 
+hideFun3(element){
+document.getElementById(element).style.display="none";
+}
 
 
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

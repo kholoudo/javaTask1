@@ -14,63 +14,38 @@ height:200px;
 
 }
 /*for exercise 6*/
-
-.header{
-    border:black 1px solid;
-
-    display: flex;
-    flex-direction: row;
-    margin: 0%;
-    background-color: darkgray;
-    width: 50%;
-}
-.header a{
-    padding-top: 1.5em;
-    padding-left: 2em;
-    text-decoration: none;
-}
-
-#paragraph{
-    width:50%;
-    margin: 0%;
-    padding: 0%;
-        
-}
-#paragraph h2{
-    background-color: darkgrey;
-    border:black 1px solid;
+article{
+    width:300px;
+    border: 1px black solid;
+    position: relative;
+    margin:5px;
 
 }
-#paragraph p{
-    border:black 1px solid;
-    margin-top: 0%;
-    padding-top: 0%;
-   /* display: none;*/
+article h2{
+    background-color: silver;
+    margin:0px;
+    padding: 15px;
+    font-size:1.5em;
 
 }
-#paragraph a{
-    text-decoration: none;
+article .text{
+    background-color: white;
+    padding:10px;
+    font-family: verdana,sans-serif;
+    font-size: 1em;
+    
 }
-.end{
-    border:black 1px solid;
+article .show_link{
+    position:absolute;
+    right:10px;
+    top:20px;
+}
 
-    display: flex;
-    flex-direction: row;
-    margin: 0%;
-    background-color: darkgray;
-    width: 50%;
-}
-.end a{
-    margin-top: 1.5em;
-    padding:0.2em;
-    text-decoration: none;
-
-}
 /*for exercise4*/
-p {
+/*p {
     border: 2px black solid;
     width: 40%;
-}
+}*/
 
 /*for exercise5*/
 #button1{
